@@ -20,7 +20,11 @@ class RandomWords extends StatefulWidget {
 class RandomWordsState extends State<RandomWords> {
   @override
   Widget build(BuildContext context) {
-    final _randomWordPairs = <WordPair>[]
+    final _randomWordPairs = <WordPair>[];
+
+    Widget _buildRow(WordPair pair) {
+      return ListTile(title: Text(pair.asPascalCase, style: TextStyle(fontSize: 16)),);
+    }
 
     Widget _buildList() {
       return ListView.builder(
@@ -33,6 +37,8 @@ class RandomWordsState extends State<RandomWords> {
           if (index >= _randomWordPairs.length) {
             _randomWordPairs.addAll(generateWordPairs().take(10));
           }
+
+          return _buildRow(_randomWordPairs[index]);
         },
       );
     }
