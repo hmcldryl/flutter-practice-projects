@@ -7,8 +7,6 @@ class RandomWords extends StatefulWidget {
 }
 
 class RandomWordsState extends State<RandomWords> {
-  @override
-  Widget build(BuildContext context) {
     final _randomWordPairs = <WordPair>[];
     final _savedWordPairs = Set<WordPair>();
 
@@ -50,7 +48,19 @@ class RandomWordsState extends State<RandomWords> {
       );
     }
 
+    void _pushSaved() {
+
+    }
+
+    @override
+    Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('WordPair Generator')), body: _buildList());
+        appBar: AppBar(
+          title: Text('WordPair Generator'),
+          actions: <Widget>[IconButton(
+            icon: Icon(Icons.list),
+            onPressed: _pushSaved,
+          )],),
+        body: _buildList());
   }
 }
