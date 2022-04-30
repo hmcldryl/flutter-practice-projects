@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,7 +23,9 @@ class RandomWordsState extends State<RandomWords> {
     final _randomWordPairs = <WordPair>[];
 
     Widget _buildRow(WordPair pair) {
-      return ListTile(title: Text(pair.asPascalCase, style: TextStyle(fontSize: 16)),);
+      return ListTile(
+        title: Text(pair.asPascalCase, style: TextStyle(fontSize: 16.0)),
+      );
     }
 
     Widget _buildList() {
@@ -44,9 +46,7 @@ class RandomWordsState extends State<RandomWords> {
     }
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Wordpair Generator'),
-        ),
+        appBar: AppBar(title: Text('WordPair Generator')),
         body: _buildList());
   }
 }
