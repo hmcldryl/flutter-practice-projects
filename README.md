@@ -44,4 +44,4 @@ The following are the **SDKs** and **IDEs** required to run the projects in this
 
 ## :iphone: Contact
 * Daryll Homecillo - [@hmcldryl](https://twitter.com/hmcldryl) - daryl.homecillo@gmail.com
-* Project Link: [https://github.com/hmcldryl/flutter-practice-projects/](https://github.com/hmcldryl/flutter-practice-projects/)
+* Repo Link: [https://github.com/hmcldryl/flutter-practice-projects/](https://github.com/hmcldryl/flutter-practice-projects/)
