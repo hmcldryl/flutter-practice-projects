@@ -43,5 +43,5 @@ The following are the **SDKs** and **IDEs** required to run the projects in this
 - [ ] ToDo App using Firebase and GetX
 
 ## :iphone: Contact
-Daryll Homecillo - [@hmcldryl](https://twitter.com/hmcldryl) - daryl.homecillo@gmail.com
-Project Link: [https://github.com/hmcldryl/flutter-practice-projects/](https://github.com/hmcldryl/flutter-practice-projects/)
+* Daryll Homecillo - [@hmcldryl](https://twitter.com/hmcldryl) - daryl.homecillo@gmail.com
+* Project Link: [https://github.com/hmcldryl/flutter-practice-projects/](https://github.com/hmcldryl/flutter-practice-projects/)
